@@ -2,7 +2,7 @@ spin_manifest_version = 2
 
 [application]
 name = "urmanac-com"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Kingdon Barrett <kingdon@urmanac.com>"]
 description = "Urbit Encyclopedia Root Domain"
 
@@ -11,5 +11,5 @@ route = "/..."
 component = "redirect-root"
 
 [component.redirect-root]
-source = { url = "https://github.com/fermyon/spin-redirect/releases/download/v0.1.0/redirect.wasm", digest = "sha256:8bee959843f28fef2a02164f5840477db81d350877e1c22cb524f41363468e52" }
-environment = { DESTINATION = "https://www.urmanac.com", STATUSCODE = "302" }
+source = { url = "https://github.com/urmanac/spin-redirect/releases/download/v0.2.0/redirect.wasm", digest = "sha256:0e5330a7828b683161823e7a528958009a3753e03aa4dcaf9824015c47f7ea8e" }
+environment = { DESTINATION = "https://www.urmanac.com", INCLUDE_PATH = "true", STATUSCODE = "302" }
